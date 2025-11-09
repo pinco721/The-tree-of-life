@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'standalone', // For better deployment compatibility
+    // Dynamic rendering is enabled via export const dynamic = 'force-dynamic' in page.tsx
     allowedDevOrigins: ["*.preview.same-app.com"],
     images: {
       unoptimized: true,
