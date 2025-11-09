@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   description: "Interactive family tree visualization",
 };
 
+// Force dynamic rendering for the entire app
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export default function RootLayout({
   children,
 }: Readonly<{

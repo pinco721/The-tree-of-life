@@ -2,9 +2,9 @@
 
 import { FamilyTreeCanvas } from "@/components/FamilyTreeCanvas";
 
-// Force dynamic rendering for this page
+// Force dynamic rendering - disable static generation
 export const dynamic = 'force-dynamic';
-export const runtime = 'nodejs';
+export const revalidate = 0; // Disable caching
 import { Header } from "@/components/Header";
 import { MemberDetailPanel } from "@/components/MemberDetailPanel";
 import { MemberForm } from "@/components/MemberForm";
